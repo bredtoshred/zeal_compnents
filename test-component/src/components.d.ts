@@ -52,4 +52,33 @@ declare global {
   }
 }
 
+
+declare global {
+  interface HTMLZoIconElement extends HTMLStencilElement {
+    'first': string;
+    'type': string;
+  }
+  var HTMLZoIconElement: {
+    prototype: HTMLZoIconElement;
+    new (): HTMLZoIconElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zo-icon': HTMLZoIconElement;
+  }
+  interface ElementTagNameMap {
+    'zo-icon': HTMLZoIconElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zo-icon': JSXElements.ZoIconAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZoIconAttributes extends HTMLAttributes {
+      'first'?: string;
+      'type'?: string;
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }

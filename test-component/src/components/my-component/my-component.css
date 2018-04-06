@@ -1,1 +1,14 @@
-
+div{
+    background:red;
+    height:200px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color:white;
+    font-family: helvetica;
+    font-size: 40px;
+    font-weight: 700;
+}
