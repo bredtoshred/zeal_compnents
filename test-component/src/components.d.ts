@@ -55,8 +55,7 @@ declare global {
 
 declare global {
   interface HTMLZoIconElement extends HTMLStencilElement {
-    'first': string;
-    'type': string;
+    'thing': string;
   }
   var HTMLZoIconElement: {
     prototype: HTMLZoIconElement;
@@ -75,8 +74,7 @@ declare global {
   }
   namespace JSXElements {
     export interface ZoIconAttributes extends HTMLAttributes {
-      'first'?: string;
-      'type'?: string;
+      'thing'?: string;
     }
   }
 }
