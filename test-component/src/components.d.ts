@@ -79,4 +79,31 @@ declare global {
   }
 }
 
+
+declare global {
+  interface HTMLZoPromoBarElement extends HTMLStencilElement {
+    'message': string;
+  }
+  var HTMLZoPromoBarElement: {
+    prototype: HTMLZoPromoBarElement;
+    new (): HTMLZoPromoBarElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zo-promo-bar': HTMLZoPromoBarElement;
+  }
+  interface ElementTagNameMap {
+    'zo-promo-bar': HTMLZoPromoBarElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zo-promo-bar': JSXElements.ZoPromoBarAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZoPromoBarAttributes extends HTMLAttributes {
+      'message'?: string;
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }

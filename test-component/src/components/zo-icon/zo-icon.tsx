@@ -36,9 +36,6 @@ export class ZoIcon {
   @Watch('thing')
   handleTypeChange(val:string) {
     console.log(val)
-    // let img = this.el.querySelector('img');
-    // img.src = svgList[val].path || '';
-    // img.alt = svgList[val].alt || '';
     this.path = svgList[val].path;
     this.alt = svgList[val].alt;
   }

@@ -1,0 +1,75 @@
+.promo-bar {
+    width: 100%;
+    min-height: $promo-bar-sm-height;
+    padding-top: 2px;
+    background-color: $promo-bar-background-color;
+    font-size: 1.4rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: 2px;
+    line-height: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+    @include breakpoint($breakpoint-md) {
+        min-height: $promo-bar-md-height;
+        font-size: 1.4rem;
+        line-height: 3.8rem;
+
+        .header & {
+            position: relative;
+            top: auto;
+        }
+    }
+
+    @include breakpoint($breakpoint-lg) {
+        min-height: $promo-bar-lg-height;
+        line-height: 2.8rem;
+    }
+}
+
+.promo-bar__inner {
+    @include breakpoint($breakpoint-md) {
+        position: relative;
+    }
+}
+
+.promo-bar__link {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: $color-dark;
+    text-decoration: none;
+
+    @include breakpoint($breakpoint-md) {
+        padding: 0 30px;
+    }
+}
+
+.promo-bar__close-button {
+    display: none;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 40px;
+    height: $promo-bar-sm-height;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    .icon--close {
+        fill: $color-dark;
+    }
+
+    @include breakpoint($breakpoint-md) {
+        display: block;
+        height: $promo-bar-md-height;
+    }
+
+    @include breakpoint($breakpoint-lg) {
+        height: $promo-bar-lg-height;
+    }
+}
