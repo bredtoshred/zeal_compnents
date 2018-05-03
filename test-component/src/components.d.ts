@@ -54,6 +54,41 @@ declare global {
 
 
 declare global {
+  interface HTMLZoAmbassadorCardElement extends HTMLStencilElement {
+    'activity': string;
+    'bgalt': string;
+    'bgimage': string;
+    'name': string;
+    'pagelink': string;
+  }
+  var HTMLZoAmbassadorCardElement: {
+    prototype: HTMLZoAmbassadorCardElement;
+    new (): HTMLZoAmbassadorCardElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zo-ambassador-card': HTMLZoAmbassadorCardElement;
+  }
+  interface ElementTagNameMap {
+    'zo-ambassador-card': HTMLZoAmbassadorCardElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zo-ambassador-card': JSXElements.ZoAmbassadorCardAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZoAmbassadorCardAttributes extends HTMLAttributes {
+      'activity'?: string;
+      'bgalt'?: string;
+      'bgimage'?: string;
+      'name'?: string;
+      'pagelink'?: string;
+    }
+  }
+}
+
+
+declare global {
   interface HTMLZoIconElement extends HTMLStencilElement {
     'thing': string;
   }

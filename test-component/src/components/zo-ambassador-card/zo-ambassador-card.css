@@ -1,0 +1,22 @@
+.image-card {
+    margin: 0 10px 20px;
+    float: left;
+}
+.image-card_inner{
+    background:red;
+    display: inline-block;
+    position: relative;
+    max-width: 340px;
+}
+
+@media (min-width: 1025px) {
+    .image-card {
+        width: calc(33.3333% - 20px);
+    }
+}
+
+@media (min-width: 681px) {
+    .image-cards .image-card {
+        width: calc(50% - 20px);
+    }
+}
