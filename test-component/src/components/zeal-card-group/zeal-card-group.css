@@ -1,0 +1,11 @@
+:host {
+    width:100%;
+    max-width:940px;
+    margin:0 auto;
+    display:flex;
+    flex-flow:row wrap;
+}
+
+::slotted(*) {
+    width:25%;
+}

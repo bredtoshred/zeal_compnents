@@ -54,10 +54,36 @@ declare global {
 
 
 declare global {
+  interface HTMLZealCardGroupElement extends HTMLStencilElement {
+
+  }
+  var HTMLZealCardGroupElement: {
+    prototype: HTMLZealCardGroupElement;
+    new (): HTMLZealCardGroupElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-card-group': HTMLZealCardGroupElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-card-group': HTMLZealCardGroupElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-card-group': JSXElements.ZealCardGroupAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealCardGroupAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
   interface HTMLZoAmbassadorCardElement extends HTMLStencilElement {
     'activity': string;
-    'bgalt': string;
-    'bgimage': string;
+    'bgImage': string;
     'name': string;
     'pagelink': string;
   }
@@ -79,8 +105,7 @@ declare global {
   namespace JSXElements {
     export interface ZoAmbassadorCardAttributes extends HTMLAttributes {
       'activity'?: string;
-      'bgalt'?: string;
-      'bgimage'?: string;
+      'bgImage'?: string;
       'name'?: string;
       'pagelink'?: string;
     }

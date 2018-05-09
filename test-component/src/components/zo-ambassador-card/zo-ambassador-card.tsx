@@ -5,23 +5,25 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'zo-ambassador-card.css',
   shadow: true
 })
-export class MyComponent {
+export class ZoAmbassadorCard {
 
   @Prop() name: string;
   @Prop() activity: string;
-  @Prop() bgimage: string;
-  @Prop() bgalt: string;
+  @Prop() bgImage: string;
   @Prop() pagelink: string;
-  
 
   render() {
+      var backgroundStyle = {
+        backgroundImage: `url(${this.bgImage})`
+    };
+      
     return (
         <div class="image-card">
-            <div class="image-card_inner">
-                <a class="image-card_link" href="{this.pagelink}">
-                  <img class="image-card_image" src={this.bgimage} alt="{this.bgalt}"></img>
+            <div class="image-card_inner" style={backgroundStyle}>
+                <a href={this.pagelink} class="image-card_link" target="_blank">
                   <div class="image-card_text">
                     <h4 class="image-card_title">{this.name}</h4>
+                      <hr/>
                     <h5 class="image-card_subtitle">{this.activity}</h5>
                   </div>
                 </a>
@@ -30,3 +32,10 @@ export class MyComponent {
     );
   }
 }
+
+//function renderCardGroup(){
+//    return (
+//        <div><slot/></div>
+//    )
+//    
+//}
