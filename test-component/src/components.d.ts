@@ -81,29 +81,60 @@ declare global {
 
 
 declare global {
-  interface HTMLZoAmbassadorCardElement extends HTMLStencilElement {
+  interface HTMLZealSecondaryHeroElement extends HTMLStencilElement {
+    'bgImage': string;
+    'heading': string;
+    'preHeading': string;
+  }
+  var HTMLZealSecondaryHeroElement: {
+    prototype: HTMLZealSecondaryHeroElement;
+    new (): HTMLZealSecondaryHeroElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-secondary-hero': HTMLZealSecondaryHeroElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-secondary-hero': HTMLZealSecondaryHeroElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-secondary-hero': JSXElements.ZealSecondaryHeroAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealSecondaryHeroAttributes extends HTMLAttributes {
+      'bgImage'?: string;
+      'heading'?: string;
+      'preHeading'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLZealCardElement extends HTMLStencilElement {
     'activity': string;
     'bgImage': string;
     'name': string;
     'pagelink': string;
   }
-  var HTMLZoAmbassadorCardElement: {
-    prototype: HTMLZoAmbassadorCardElement;
-    new (): HTMLZoAmbassadorCardElement;
+  var HTMLZealCardElement: {
+    prototype: HTMLZealCardElement;
+    new (): HTMLZealCardElement;
   };
   interface HTMLElementTagNameMap {
-    'zo-ambassador-card': HTMLZoAmbassadorCardElement;
+    'zeal-card': HTMLZealCardElement;
   }
   interface ElementTagNameMap {
-    'zo-ambassador-card': HTMLZoAmbassadorCardElement;
+    'zeal-card': HTMLZealCardElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'zo-ambassador-card': JSXElements.ZoAmbassadorCardAttributes;
+      'zeal-card': JSXElements.ZealCardAttributes;
     }
   }
   namespace JSXElements {
-    export interface ZoAmbassadorCardAttributes extends HTMLAttributes {
+    export interface ZealCardAttributes extends HTMLAttributes {
       'activity'?: string;
       'bgImage'?: string;
       'name'?: string;

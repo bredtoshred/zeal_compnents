@@ -1,11 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'zo-ambassador-card',
-  styleUrl: 'zo-ambassador-card.css',
+  tag: 'zeal-card',
+  styleUrl: 'zeal-card.css',
   shadow: true
 })
-export class ZoAmbassadorCard {
+export class ZealCard {
 
   @Prop() name: string;
   @Prop() activity: string;
@@ -32,10 +32,3 @@ export class ZoAmbassadorCard {
     );
   }
 }
-
-//function renderCardGroup(){
-//    return (
-//        <div><slot/></div>
-//    )
-//    
-//}
