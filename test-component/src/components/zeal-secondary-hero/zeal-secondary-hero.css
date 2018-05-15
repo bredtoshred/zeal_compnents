@@ -37,3 +37,34 @@ h1 {
     font-size: 5.7rem;
     line-height: 6.8rem;
 }
+
+@media screen and (max-width: 1440px) {
+    .secondaryHeader {
+        height:auto;
+    }
+    .heroContent {
+        position: relative;
+        width: 100%;
+    }
+    .heroContent:before {
+        content: "";
+        height: 0;
+        display: inline-block;
+        padding-top: 50%;
+        width: 1px;
+        position: relative;
+    }    
+    .heroContent:after {
+        content: "";
+        height: 0;
+        display: inline-block;
+        padding-bottom: 50%;
+        width: 1px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 681px) {
+    font-size: 3.8rem;
+    line-height: 4.6rem;
+}

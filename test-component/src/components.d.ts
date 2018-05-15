@@ -81,6 +81,147 @@ declare global {
 
 
 declare global {
+  interface HTMLZealCtaElement extends HTMLStencilElement {
+    'linkHref': string;
+    'linkText': string;
+  }
+  var HTMLZealCtaElement: {
+    prototype: HTMLZealCtaElement;
+    new (): HTMLZealCtaElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-cta': HTMLZealCtaElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-cta': HTMLZealCtaElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-cta': JSXElements.ZealCtaAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealCtaAttributes extends HTMLAttributes {
+      'linkHref'?: string;
+      'linkText'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLZealProductCardImageElement extends HTMLStencilElement {
+    'imgAlt': string;
+    'imgSrc': string;
+  }
+  var HTMLZealProductCardImageElement: {
+    prototype: HTMLZealProductCardImageElement;
+    new (): HTMLZealProductCardImageElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-product-card-image': HTMLZealProductCardImageElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-product-card-image': HTMLZealProductCardImageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-product-card-image': JSXElements.ZealProductCardImageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealProductCardImageAttributes extends HTMLAttributes {
+      'imgAlt'?: string;
+      'imgSrc'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLZealProductCardTitleElement extends HTMLStencilElement {
+    'title': string;
+  }
+  var HTMLZealProductCardTitleElement: {
+    prototype: HTMLZealProductCardTitleElement;
+    new (): HTMLZealProductCardTitleElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-product-card-title': HTMLZealProductCardTitleElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-product-card-title': HTMLZealProductCardTitleElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-product-card-title': JSXElements.ZealProductCardTitleAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealProductCardTitleAttributes extends HTMLAttributes {
+      'title'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLZealProductCardElement extends HTMLStencilElement {
+
+  }
+  var HTMLZealProductCardElement: {
+    prototype: HTMLZealProductCardElement;
+    new (): HTMLZealProductCardElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-product-card': HTMLZealProductCardElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-product-card': HTMLZealProductCardElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-product-card': JSXElements.ZealProductCardAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealProductCardAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLZealQuoteBlockElement extends HTMLStencilElement {
+    'name': string;
+    'quote': string;
+  }
+  var HTMLZealQuoteBlockElement: {
+    prototype: HTMLZealQuoteBlockElement;
+    new (): HTMLZealQuoteBlockElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-quote-block': HTMLZealQuoteBlockElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-quote-block': HTMLZealQuoteBlockElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-quote-block': JSXElements.ZealQuoteBlockAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealQuoteBlockAttributes extends HTMLAttributes {
+      'name'?: string;
+      'quote'?: string;
+    }
+  }
+}
+
+
+declare global {
   interface HTMLZealSecondaryHeroElement extends HTMLStencilElement {
     'bgImage': string;
     'heading': string;
@@ -106,6 +247,43 @@ declare global {
       'bgImage'?: string;
       'heading'?: string;
       'preHeading'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLZealSectionElement extends HTMLStencilElement {
+    'bgImage': string;
+    'imagePos': string;
+    'linkHref': string;
+    'linkText': string;
+    'name': string;
+    'text': string;
+  }
+  var HTMLZealSectionElement: {
+    prototype: HTMLZealSectionElement;
+    new (): HTMLZealSectionElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-section': HTMLZealSectionElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-section': HTMLZealSectionElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-section': JSXElements.ZealSectionAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealSectionAttributes extends HTMLAttributes {
+      'bgImage'?: string;
+      'imagePos'?: string;
+      'linkHref'?: string;
+      'linkText'?: string;
+      'name'?: string;
+      'text'?: string;
     }
   }
 }

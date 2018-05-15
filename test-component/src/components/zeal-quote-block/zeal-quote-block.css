@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.quoteBlock {
+    background-image: url("https://www.zealoptics.com/firebase_assets/images/redesign/zeal-pattern-light.png");
+}
+.quoteText{
+    padding:75px;
+    text-align:center;
+}
+
+p,span{
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    max-width: 950px;
+    margin: 15px auto;
+    color: #5c6162;
+}
+span{
+    font-weight:bold;
+}
