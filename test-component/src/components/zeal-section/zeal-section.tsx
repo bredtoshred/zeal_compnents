@@ -7,7 +7,7 @@ import { Component, Prop } from '@stencil/core';
 })
 export class ZealSection {
 
-  @Prop() name: string;
+  @Prop() heading: string;
   @Prop() text: string;
   @Prop() bgImage: string;
   @Prop() linkText: string;
@@ -24,7 +24,7 @@ export class ZealSection {
         <div class={`sectionContainer ${this.imagePos || 'left'}`}>
             <div class="image" style={backgroundStyle}></div>
             <div class="text">
-                <h2>Meet {this.name}</h2>
+                <h2>{this.heading}</h2>
                 <p>{this.text}</p>
                 <zeal-cta link-href={this.linkHref} link-text={this.linkText}></zeal-cta>
             </div>

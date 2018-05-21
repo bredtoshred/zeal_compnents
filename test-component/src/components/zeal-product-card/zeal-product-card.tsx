@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'zeal-product-card',
@@ -6,11 +6,15 @@ import { Component } from '@stencil/core';
   shadow: true
 })
 export class ZealProductCard {
+    
+    @Prop() link: string;
 
   render() {
     return (
         <div class="card-inner">
-            <slot />
+            <a href={this.link} target="_blank">
+                <slot />
+            </a>
         </div>
     );
   }

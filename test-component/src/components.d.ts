@@ -54,6 +54,33 @@ declare global {
 
 
 declare global {
+  interface HTMLZealAmbassadorDetailPageElement extends HTMLStencilElement {
+
+  }
+  var HTMLZealAmbassadorDetailPageElement: {
+    prototype: HTMLZealAmbassadorDetailPageElement;
+    new (): HTMLZealAmbassadorDetailPageElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-ambassador-detail-page': HTMLZealAmbassadorDetailPageElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-ambassador-detail-page': HTMLZealAmbassadorDetailPageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-ambassador-detail-page': JSXElements.ZealAmbassadorDetailPageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealAmbassadorDetailPageAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
   interface HTMLZealCardGroupElement extends HTMLStencilElement {
 
   }
@@ -167,7 +194,7 @@ declare global {
 
 declare global {
   interface HTMLZealProductCardElement extends HTMLStencilElement {
-
+    'link': string;
   }
   var HTMLZealProductCardElement: {
     prototype: HTMLZealProductCardElement;
@@ -186,7 +213,34 @@ declare global {
   }
   namespace JSXElements {
     export interface ZealProductCardAttributes extends HTMLAttributes {
+      'link'?: string;
+    }
+  }
+}
 
+
+declare global {
+  interface HTMLZealProductFavoritesElement extends HTMLStencilElement {
+    'heading': string;
+  }
+  var HTMLZealProductFavoritesElement: {
+    prototype: HTMLZealProductFavoritesElement;
+    new (): HTMLZealProductFavoritesElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-product-favorites': HTMLZealProductFavoritesElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-product-favorites': HTMLZealProductFavoritesElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-product-favorites': JSXElements.ZealProductFavoritesAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealProductFavoritesAttributes extends HTMLAttributes {
+      'heading'?: string;
     }
   }
 }
@@ -255,10 +309,10 @@ declare global {
 declare global {
   interface HTMLZealSectionElement extends HTMLStencilElement {
     'bgImage': string;
+    'heading': string;
     'imagePos': string;
     'linkHref': string;
     'linkText': string;
-    'name': string;
     'text': string;
   }
   var HTMLZealSectionElement: {
@@ -279,10 +333,10 @@ declare global {
   namespace JSXElements {
     export interface ZealSectionAttributes extends HTMLAttributes {
       'bgImage'?: string;
+      'heading'?: string;
       'imagePos'?: string;
       'linkHref'?: string;
       'linkText'?: string;
-      'name'?: string;
       'text'?: string;
     }
   }
