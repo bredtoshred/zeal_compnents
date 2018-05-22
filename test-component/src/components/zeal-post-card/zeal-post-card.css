@@ -1,0 +1,96 @@
+.postcard {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 340px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.postcard > *:nth-child(2) {
+    padding-top: 30px;
+}
+
+.postcard > *:last-child {
+    padding-bottom: 30px;
+}
+
+.postcard ul,
+.postcard h3,
+.postcard p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.postcard ul,
+.postcard img,
+.postcard h3,
+.postcard p {
+    width: 100%;
+}
+
+.postcard img {
+    height: 100%;
+}
+
+ul {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.prepretitle,
+.pretitle {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.pretitle {
+    margin: 10px;
+}
+
+::slotted(*):after {
+    content:', ';
+    white-space: pre;
+}
+::slotted(*):last-child:after {
+    content:none !important;
+}
+.prepretitle ::slotted(*) {
+    color: #252525;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.pretitle ::slotted(*) {
+    color: #ccc;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h3 {
+    margin: 20px 0 10px;
+    color: #252525;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+
+p {
+    color: #525252;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: left;
+}

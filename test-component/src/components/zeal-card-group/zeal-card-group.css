@@ -16,20 +16,6 @@
     padding: 10px;
 }
 
-::slotted(*) {
-    position: relative;
-    width: 100%;
-}
-
-::slotted(*):before {
-    content: "";
-    height: 0;
-    display: inline-block;
-    padding-top: 100%;
-    width: 1px;
-    position: relative;
-}
-
 @media screen and (max-width: 1025px) and (min-width: 682px) {
     :host {
         grid-template-columns: repeat(3, 1fr);

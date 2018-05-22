@@ -137,6 +137,41 @@ declare global {
 
 
 declare global {
+  interface HTMLZealPostCardElement extends HTMLStencilElement {
+    'description': string;
+    'image': string;
+    'linkHref': string;
+    'linkText': string;
+    'title': string;
+  }
+  var HTMLZealPostCardElement: {
+    prototype: HTMLZealPostCardElement;
+    new (): HTMLZealPostCardElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-post-card': HTMLZealPostCardElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-post-card': HTMLZealPostCardElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-post-card': JSXElements.ZealPostCardAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealPostCardAttributes extends HTMLAttributes {
+      'description'?: string;
+      'image'?: string;
+      'linkHref'?: string;
+      'linkText'?: string;
+      'title'?: string;
+    }
+  }
+}
+
+
+declare global {
   interface HTMLZealProductCardImageElement extends HTMLStencilElement {
     'imgAlt': string;
     'imgSrc': string;

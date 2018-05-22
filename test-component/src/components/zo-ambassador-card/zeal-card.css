@@ -6,8 +6,18 @@
 :host {
     display: block;
     font-size:4px;
+    position: relative;
+    width: 100%;
 }
 
+:host:before {
+    content: "";
+    height: 0;
+    display: inline-block;
+    padding-top: 100%;
+    width: 1px;
+    position: relative;
+}
 .image-card {
     position: absolute;
     top: 0;
@@ -30,7 +40,6 @@
 .image-card_inner:hover a {
     opacity: 1;
 }
-
 
 .image-card_link {
     width: 100%;
