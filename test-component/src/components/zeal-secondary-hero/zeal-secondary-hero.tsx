@@ -22,6 +22,7 @@ export class ZealSecondaryHero {
             <div class="heroContent">
                 <h2>{this.preHeading}</h2>
                 <h1>{this.heading}</h1>
+                <slot />
             </div>
         </div>
     );

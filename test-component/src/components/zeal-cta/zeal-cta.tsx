@@ -9,15 +9,12 @@ export class ZealCta {
 
   @Prop() linkText: string = "follow";
   @Prop() linkHref: string;
-
-
-
-    
-
+  @Prop() type: string = "default";
+  
   render() {
       
     return (
-        <a href={this.linkHref}>{this.linkText}</a>
+        <a class={this.type} href={this.linkHref}>{this.linkText}</a>
     );
   }
 }

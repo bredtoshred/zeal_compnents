@@ -111,6 +111,7 @@ declare global {
   interface HTMLZealCtaElement extends HTMLStencilElement {
     'linkHref': string;
     'linkText': string;
+    'type': string;
   }
   var HTMLZealCtaElement: {
     prototype: HTMLZealCtaElement;
@@ -131,6 +132,7 @@ declare global {
     export interface ZealCtaAttributes extends HTMLAttributes {
       'linkHref'?: string;
       'linkText'?: string;
+      'type'?: string;
     }
   }
 }
@@ -283,6 +285,7 @@ declare global {
 
 declare global {
   interface HTMLZealQuoteBlockElement extends HTMLStencilElement {
+    'bgImage': string;
     'name': string;
     'quote': string;
   }
@@ -303,6 +306,7 @@ declare global {
   }
   namespace JSXElements {
     export interface ZealQuoteBlockAttributes extends HTMLAttributes {
+      'bgImage'?: string;
       'name'?: string;
       'quote'?: string;
     }
@@ -373,6 +377,43 @@ declare global {
       'linkHref'?: string;
       'linkText'?: string;
       'text'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLZealTechBlockElement extends HTMLStencilElement {
+    'bgImage': string;
+    'description': string;
+    'heading': string;
+    'image': string;
+    'imageAlt': string;
+    'subHeading': string;
+  }
+  var HTMLZealTechBlockElement: {
+    prototype: HTMLZealTechBlockElement;
+    new (): HTMLZealTechBlockElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-tech-block': HTMLZealTechBlockElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-tech-block': HTMLZealTechBlockElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-tech-block': JSXElements.ZealTechBlockAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealTechBlockAttributes extends HTMLAttributes {
+      'bgImage'?: string;
+      'description'?: string;
+      'heading'?: string;
+      'image'?: string;
+      'imageAlt'?: string;
+      'subHeading'?: string;
     }
   }
 }

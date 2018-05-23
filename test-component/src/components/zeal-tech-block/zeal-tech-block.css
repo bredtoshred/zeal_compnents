@@ -1,0 +1,46 @@
+.tech-block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    
+}
+
+.tech-block h2,
+.tech-block p {
+    width: 100%;
+    text-align: center;
+}
+
+.tech-block .content {
+    margin: 20px 10px;
+    padding: 70px 10px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    letter-spacing: 3px;
+    line-height: 4rem;
+    margin: 20px 0;
+    color: #5c6162;
+    font-weight: 700;
+}
+
+.subHeading {
+    margin-top: -20px;
+    color: #5c6162;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.description{
+    margin:1em 0;
+}
+
+img {
+    display: block;
+    margin: 50px auto;
+    max-width:388px;
+}

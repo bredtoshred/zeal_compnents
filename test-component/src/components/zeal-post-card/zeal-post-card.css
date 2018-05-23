@@ -56,12 +56,14 @@ a {
 }
 
 ::slotted(*):after {
-    content:', ';
+    content: ', ';
     white-space: pre;
 }
+
 ::slotted(*):last-child:after {
-    content:none !important;
+    content: none !important;
 }
+
 .prepretitle ::slotted(*) {
     color: #252525;
     font-size: 1.4rem;
@@ -93,4 +95,15 @@ p {
     font-size: 1.4rem;
     line-height: 1.6rem;
     text-align: left;
+}
+
+:slotted() {
+    margin-top: 20px;
+    transition: background-color .2s ease 0s;
+    background-color: #16769d;
+    color: #fff;
+    width: auto;
+    min-width: 100px;
+    max-width: 300px;
+    padding: 0 20px;
 }

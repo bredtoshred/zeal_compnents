@@ -9,11 +9,14 @@ export class ZealQuoteBlock {
 
   @Prop() name: string;
   @Prop() quote: string;
-
-
+  @Prop() bgImage: string ="https://www.zealoptics.com/_ui/responsive/theme-zealb2c/images/zeal-pattern-light.png";
+    
   render() {
-      return (
-        <div class="quoteBlock">
+    var backgroundStyle = {
+        backgroundImage: `url(${this.bgImage})`
+    };
+    return (
+        <div class="quoteBlock" style={backgroundStyle}>
             <div class="quoteText">
                 <p>{this.quote}</p>
                 <span>- {this.name}</span>
