@@ -383,6 +383,68 @@ declare global {
 
 
 declare global {
+  interface HTMLZealSlideElement extends HTMLStencilElement {
+    'bgImage': string;
+    'heading': string;
+    'href': string;
+    'linkText': string;
+    'subHeading': string;
+  }
+  var HTMLZealSlideElement: {
+    prototype: HTMLZealSlideElement;
+    new (): HTMLZealSlideElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-slide': HTMLZealSlideElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-slide': HTMLZealSlideElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-slide': JSXElements.ZealSlideAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealSlideAttributes extends HTMLAttributes {
+      'bgImage'?: string;
+      'heading'?: string;
+      'href'?: string;
+      'linkText'?: string;
+      'subHeading'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLZealSliderElement extends HTMLStencilElement {
+
+  }
+  var HTMLZealSliderElement: {
+    prototype: HTMLZealSliderElement;
+    new (): HTMLZealSliderElement;
+  };
+  interface HTMLElementTagNameMap {
+    'zeal-slider': HTMLZealSliderElement;
+  }
+  interface ElementTagNameMap {
+    'zeal-slider': HTMLZealSliderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'zeal-slider': JSXElements.ZealSliderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ZealSliderAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
   interface HTMLZealTechBlockElement extends HTMLStencilElement {
     'bgImage': string;
     'description': string;

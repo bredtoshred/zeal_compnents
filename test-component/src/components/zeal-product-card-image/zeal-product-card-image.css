@@ -1,6 +1,8 @@
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: 60%;
     position:relative;
-    z-index:-5;
+    margin:0 auto;
+    padding:5% 0;
 }

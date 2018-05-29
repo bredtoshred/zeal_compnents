@@ -1,0 +1,42 @@
+.slider{
+    display:flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width:100vw;
+}
+
+.buttons{
+    position: relative;
+    min-width: 100vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000; 
+}
+
+.left{
+    background-image: url("https://www.materialui.co/materialIcons/navigation/chevron_left_white_192x192.png");
+}
+
+.right{
+     background-image: url("https://www.materialui.co/materialIcons/navigation/chevron_right_white_192x192.png");
+}
+.right, .left{
+    z-index:1001;
+    width: 166px;
+    height: 100%;
+    color: white;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    margin-bottom: 0;
+}
+::slotted(*:nth-of-type(1)){
+    margin-left:-100vw;
+}
+::slotted(*){
+    z-index:999;
+    position: relative;
+    margin-left:-100vw;
+}

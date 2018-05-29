@@ -4,6 +4,7 @@
 
 .quoteBlock {
     background-image: url("https://www.zealoptics.com/firebase_assets/images/redesign/zeal-pattern-light.png");
+    width:100%;
 }
 .quoteText{
     padding:75px;

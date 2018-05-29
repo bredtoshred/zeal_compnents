@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.slide {
+    width: 100vw;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content {
+    padding: 0 166px;
+    width:100%;
+}
+
+h2,h3{
+    color:white;
+    width:100%;
+}
+
+h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    white-space: normal;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+h3{
+    font-size: 2.5em;
+    white-space: normal;
+    margin: .25em auto;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
